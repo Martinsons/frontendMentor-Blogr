@@ -1,0 +1,30 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.btn {
+	padding: 10px 20px;
+	border: none;
+	border-radius: 20px;
+	background-color: aqua;
+}
+
+.navbar {
+	border: 1px solid;
+  display: none;
+}
+
+.active {
+  /* display: none; */
+}
+
+.navbar ul {
+}
+
+.navbar ul li {
+}
+
+.navbar ul li a {
+}

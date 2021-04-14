@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-red: hsl(356, 100%, 66%);
+  --hover-red: hsl(355, 100%, 74%);
+  --heading-blue: hsl(208, 49%, 24%);
+  --body-blue: hsl(207, 13%, 34%);
+  --footer-background: hsl(240, 10%, 16%);
+  --footer-blue: hsl(240, 2%, 79%);
+
+
+  --font-overpass: 'Overpass', sans-serif;
+  /* 300, 600 */
+  --font-ubuntu: 'Ubuntu', sans-serif;
+  /* 400, 500, 700 */
+}
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+header {
+  border-bottom-left-radius: 13rem;
+  background-image: url("./images/bg-pattern-intro.svg"), linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 2.5rem;
+}
+
+.main-heading {
+  color: white;
+  font-family: var(--font-ubuntu);
+  font-weight: 400;
+  font-size: 3.3rem;
+  padding: 5rem 3rem 1rem;
+  line-height: 5rem;
+  text-align: center;
+}
+
+.small-heading {
+  color: white;
+  font-family: var(--font-overpass);
+  font-weight: 300;
+  font-size: 1.7rem;
+  padding: 1rem 3rem 2rem;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.btn {
+  margin: 3rem 0 17rem;
+  padding: 1.5rem 1.7rem;
+  font-size: 1.8rem;
+  border-radius: 30px;
+  border: 2px solid transparent;
+  font-family: var(--font-ubuntu);
+  font-weight: 600;
+}
+
+.btn-1 {
+  margin-left: .75rem;
+  background-color: var(--white);
+  color: var(--light-red);
+}
+
+.btn-1:focus {
+  outline: none;
+}
+
+.btn-1:hover {
+  background-color: var(--hover-red);
+  color: var(--white);
+  transition: ease-in-out .7s;
+}
+
+.btn-2 {
+  padding: 1.5rem 2.4rem;
+  margin-right: .75rem;
+  color: var(--white);
+  background-color: transparent;
+  border-color: var(--white);
+}
+
+.btn-2:hover {
+  background-color: var(--white);
+  color: var(--hover-red);
+  transition: ease-in-out .7s;
+}
+
+.btn-2:focus {
+  outline: none;
+}
